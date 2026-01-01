@@ -37,8 +37,6 @@ def load_handwriting_to_coordinates(filename, target_size):
     
     return np.column_stack((x_indices, y_indices_flipped)).astype(float)
 
-# --- Main Execution ---
-
 print(f"Loading {IMAGE_FILENAME} ...")
 coordinate_data = load_handwriting_to_coordinates(IMAGE_FILENAME, TARGET_SIZE)
 
